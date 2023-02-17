@@ -165,3 +165,29 @@ label {
   width: 300px;
   margin-left: 20px;
 }
+
+/*-------STATS-------*/
+
+table {
+  width: 60%;
+  margin: 40px auto;
+
+  border: 5px solid #f19fc5;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  border: 2px solid rgb(223, 183, 213);
+  border-collapse: collapse;
+  text-align: left;
+  padding: 5px;
+}
+
+thead {
+  font-weight: bold;
+}
+
+.head-td {
+  background-color: #f19fc5;
+}
