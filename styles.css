@@ -33,18 +33,25 @@ body {
 
 .label-w {
   margin-right: 20px;
+  margin-left: 5px;
 }
-.checks {
+.div-checks {
   border-bottom: 1px solid #dd2079;
   padding: 20px;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
+.check {
+  display: flex;
+  flex-direction: row;
+}
+
 .div-imgs {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
   height: 350px;
 }
 .imgs {
@@ -98,6 +105,9 @@ body {
   display: flex;
   margin-top: 20px;
   background-color: #dd2079;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 .ic-wp {
   width: 30px;
@@ -190,4 +200,26 @@ thead {
 
 .head-td {
   background-color: #f19fc5;
+}
+
+/*-------MEDIA QUERIS-------*/
+
+@media only screen and (max-width: 900px) {
+  .div-imgs {
+    overflow-y: auto;
+    flex-direction: column;
+    height: auto;
+  }
+  .imgs {
+    margin: 20px auto;
+    position: relative;
+  }
+  .iconos {
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .checks {
+  }
 }
