@@ -47,19 +47,6 @@ body {
   flex-direction: row;
 }
 
-.card img {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-.card {
-  border-radius: 8px;
-  margin-bottom: 15px;
-  transition: box-shadow 0.4s ease-in-out;
-}
-.card:hover {
-  box-shadow: 0 0 30px rgba(221, 32, 121, 0.8);
-}
-
 .boton {
   margin: 0 auto;
   padding: 2px 4px 4px;
@@ -177,24 +164,11 @@ thead {
 /*-------MEDIA QUERIS-------*/
 
 @media only screen and (max-width: 900px) {
-  .div-imgs {
-    overflow-y: auto;
-    flex-direction: column;
-    height: auto;
-  }
-  .imgs {
-    margin: 20px auto;
-    position: relative;
-  }
   .iconos {
     position: relative;
   }
 }
 
-@media only screen and (max-width: 650px) {
-  .checks {
-  }
-}
 @media only screen and (max-width: 492px) {
   .tit {
     height: 100px;
@@ -206,7 +180,20 @@ thead {
 
 .cont-galeria {
   padding-top: 30px;
+  margin: auto;
 }
-.cont-galeria img {
-  height: 170px;
+
+.card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 160px;
+  object-fit: cover;
+}
+.card {
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.4s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 0 30px rgba(221, 32, 121, 0.8);
 }
