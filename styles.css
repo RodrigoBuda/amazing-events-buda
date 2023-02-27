@@ -47,57 +47,29 @@ body {
   flex-direction: row;
 }
 
-.div-imgs {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 350px;
+.card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
-.imgs {
-  display: flex;
-  width: 220px;
-  height: 320px;
-  background-size: 100% 50%;
+.card {
   border-radius: 8px;
-  background-repeat: no-repeat;
-  flex-direction: column;
-
+  margin-bottom: 15px;
   transition: box-shadow 0.4s ease-in-out;
 }
-.imgs:hover {
+.card:hover {
   box-shadow: 0 0 30px rgba(221, 32, 121, 0.8);
 }
-.p-img {
-  padding-top: 8px;
-}
 
-.imgs p {
-  margin-top: 70%;
-  text-align: center;
-  word-wrap: break-word;
-}
 .boton {
   margin: 0 auto;
-  padding: 2px 4px;
+  padding: 2px 4px 4px;
   font-weight: bold;
   font-size: 1.2em;
   border-radius: 8px;
   border: 2px solid #f19fc5;
-  color: white;
+  color: #fafafa;
   background-color: #dd2079;
-}
-.img1 {
-  background-image: url(./img/Cinema.jpg);
-}
-.img2 {
-  background-image: url(./img/Costume_Party.jpg);
-}
-.img3 {
-  background-image: url(./img/Food_Fair.jpg);
-}
-.img4 {
-  background-image: url(./img/Marathon.jpg);
+  text-decoration: none;
 }
 
 .iconos {
@@ -106,7 +78,7 @@ body {
   margin-top: 20px;
   background-color: #dd2079;
   width: 100%;
-  position: absolute;
+
   bottom: 0;
 }
 .ic-wp {
@@ -222,4 +194,19 @@ thead {
 @media only screen and (max-width: 650px) {
   .checks {
   }
+}
+@media only screen and (max-width: 492px) {
+  .tit {
+    height: 100px;
+    text-align: center;
+  }
+}
+
+/*GALERIA*/
+
+.cont-galeria {
+  padding-top: 30px;
+}
+.cont-galeria img {
+  height: 170px;
 }
