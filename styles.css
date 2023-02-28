@@ -41,6 +41,7 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .check {
   display: flex;
@@ -193,6 +194,7 @@ thead {
   border-radius: 8px;
   margin-bottom: 15px;
   transition: box-shadow 0.4s ease-in-out;
+  min-width: 33%;
 }
 .card:hover {
   box-shadow: 0 0 30px rgba(221, 32, 121, 0.8);
