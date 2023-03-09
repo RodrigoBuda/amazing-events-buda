@@ -61,12 +61,12 @@ body {
 }
 
 .iconos {
+  position: relative;
   height: 85px;
   display: flex;
-  margin-top: 20px;
+  margin-top: 50px;
   background-color: #dd2079;
   width: 100%;
-
   bottom: 0;
 }
 .ic-wp {
@@ -89,6 +89,11 @@ body {
 }
 
 /*CONTACT*/
+.cont-iconos-contact {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 .cont-form {
   height: 400px;
   text-align: center;
@@ -113,27 +118,30 @@ label {
 }
 
 /*DETAILS*/
-
-.cont-img-text {
-  padding-top: 30px;
-  margin-right: 10px;
+/*.cont-card-details {
   display: flex;
-  height: 400px;
   justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}*/
+
+.card-details {
+  display: flex;
   margin: auto;
+  align-items: center;
+  width: 40%;
+  margin-top: 30px;
 }
-.img-details {
-  background-image: url(./img/Museum_Tour.jpg);
-  width: 400px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 10px;
+.cont-img-details {
+  width: 100%;
 }
-.cont-text {
-  text-align: center;
+.cont-img-details img {
+  width: 100%;
+  object-fit: cover;
+}
+.text-details {
+  margin: 10px 10px;
   word-wrap: break-word;
-  width: 300px;
-  margin-left: 20px;
 }
 
 /*-------STATS-------*/
@@ -164,16 +172,44 @@ thead {
 
 /*-------MEDIA QUERIS-------*/
 
-@media only screen and (max-width: 900px) {
-  .iconos {
-    position: relative;
-  }
-}
-
 @media only screen and (max-width: 492px) {
   .tit {
     height: 100px;
     text-align: center;
+  }
+  .container-cards {
+    width: 100%;
+  }
+
+  .cont-img-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card {
+    min-width: 250px;
+  }
+  .img-details {
+    width: 300px;
+    height: 300px;
+  }
+  .cont-text {
+    margin: auto;
+  }
+  .details-iconos {
+    position: fixed;
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .card-details {
+    width: 60%;
+  }
+  .details-iconos {
+    position: relative;
+    bottom: 0;
   }
 }
 
@@ -182,6 +218,12 @@ thead {
 .cont-galeria {
   padding-top: 30px;
   margin: auto;
+  width: 100%;
+}
+.container-cards {
+  margin: auto;
+
+  margin-bottom: 100px;
 }
 
 .card img {
@@ -193,9 +235,26 @@ thead {
 .card {
   border-radius: 8px;
   margin-bottom: 15px;
-  transition: box-shadow 0.4s ease-in-out;
   min-width: 33%;
+  transition: box-shadow 0.4s ease-in-out;
 }
 .card:hover {
   box-shadow: 0 0 30px rgba(221, 32, 121, 0.8);
+}
+.card-body {
+  height: 300px;
+}
+.card-body .boton {
+  position: absolute;
+  bottom: 8px;
+}
+.cont-h1-card {
+  height: 100px;
+}
+.cont-description {
+  height: 100px;
+}
+
+.cont-category {
+  height: 50px;
 }
