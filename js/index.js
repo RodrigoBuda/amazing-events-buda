@@ -1,6 +1,5 @@
 const contenedorTarjetas = document.getElementById("contenedor");
 let buscador = document.getElementById("buscador");
-
 function dibujaTarjetas(eventos) {
   let tarjetas = "";
   for (const e of eventos) {
@@ -19,9 +18,11 @@ function dibujaTarjetas(eventos) {
            <p class="card-text">Category: ${e.category} </p>
            </div>
             <p>${e.date}</p>
-            <a href="./details.html?id=${e._id}" id="botonJs" class="boton">
-            See More
-            </a>
+            
+          
+          <button id="botonJs" type="button" class="boton" onclick="window.location.href='../details.html?id=${e._id}';">See more</button>
+
+
         </div>
    </div>
 </div>`;
