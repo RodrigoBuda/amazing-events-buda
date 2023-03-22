@@ -84,9 +84,9 @@ function statsInitializer() {
   function eventStaticsShow(eventsAttendance, eventsCapacity) {
     let rows = "";
     rows = `<tr>
-      <td class="td-edit">Events with the highest percentage of attendance</td>
-      <td class="td-edit">Events with the lowest percentage of attendance</td>
-      <td class="td-edit">Event with larger Capacity</td>
+      <td class="td-edit bg-secondary">Events with the highest percentage of attendance</td>
+      <td class="td-edit bg-secondary">Events with the lowest percentage of attendance</td>
+      <td class="td-edit bg-secondary">Event with larger Capacity</td>
     </tr>`;
     for (let i = 0; i < 3; i++) {
       rows += `<tr>
