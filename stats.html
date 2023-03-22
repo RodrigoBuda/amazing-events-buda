@@ -86,69 +86,57 @@
       <a href="#"><h2>STATS</h2></a>
     </div>
   </body>
-</html>
 
     <!---------------------------- TABLA ---------------------------->
-    <table class="bordered">
+    <table>
         <thead>
             <tr>
                 <td class="head-td" colspan="3">Events Statistics</td>
             </tr>
             <tr>
-                <td>Events with the highest percentage of attendance</td>
-                <td>Events with the lowest percentage of attendance</td>
-                <td>Event with larger Capacity</td>
+                <td class="td-edit">Events with the highest percentage of attendance</td>
+                <td class="td-edit">Events with the lowest percentage of attendance</td>
+                <td class="td-edit">Event with larger Capacity</td>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>&nbsp</td>
-                <td>&nbsp</td>
-                <td>&nbsp</td>
-            </tr>
-            <thead>
-                <tr>
-                    <td class="head-td" colspan="3">Upcoming Events Statistic By Category</td>
-                </tr>
-                <tr>
-                    <td>Categories</td>
-                    <td>Revenues</td>
-                    <td>Percentage Of Attendance</td>
-                </tr>
-            </thead>
-            <tr>
-                <td>&nbsp</td>
-                <td>&nbsp</td>
-                <td>&nbsp</td>
-            </tr>
-            <tr>
-                <td>&nbsp</td>
-                <td>&nbsp</td>
-                <td>&nbsp</td>
-            </tr>
+          <tbody id="eventStatics">
+              <tr>
+
+              </tr>
+          </tbody>
+    </table>
+            <table>
+                <thead>
+                    <tr>
+                        <td class="head-td" colspan="3">Upcoming Events Statistic By Category</td>
+                    </tr>
+                    <tr>
+                        <td class="td-edit">Categories</td>
+                        <td class="td-edit">Revenues</td>
+                        <td class="td-edit">Percentage Of Attendance</td>
+                    </tr>
+                </thead>
+                <tbody id="upcomingStatics">
+
+                </tbody>
+            </table>
+
+
+          <table>
             <thead>
                 <tr>
                     <td class="head-td" colspan="3">Past Events Statistic By Category</td>
                 </tr>
                 <tr>
-                    <td>Categories</td>
-                    <td>Revenues</td>
-                    <td>Percentage Of Attendance</td>
+                    <td class="td-edit">Categories</td>
+                    <td class="td-edit">Revenues</td>
+                    <td class="td-edit">Percentage Of Attendance</td>
                 </tr>
             </thead>
-            <tr>
-                <td>&nbsp</td>
-                <td>&nbsp</td>
-                <td>&nbsp</td>
-            </tr>
-            <tr>
-                <td>&nbsp</td>
-                <td>&nbsp</td>
-                <td>&nbsp</td>
-            </tr>
+            <tbody id="pastsStatics">
 
-        </tbody>
-    </table>
+            </tbody>
+          </table>
 
 
 
@@ -205,6 +193,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/stats.js"></script>
   </body>
 </html>
 

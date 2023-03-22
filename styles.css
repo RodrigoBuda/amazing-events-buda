@@ -154,6 +154,11 @@ table {
   border-collapse: collapse;
   text-align: center;
 }
+.td-edit {
+  padding: 10px;
+  border-right: 1px solid rgba(223, 183, 213, 0.4);
+  border-bottom: 1px solid rgba(223, 183, 213, 0.4);
+}
 
 td {
   border: 2px solid rgb(223, 183, 213);
