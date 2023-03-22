@@ -30,8 +30,15 @@ function dibujaTarjetas(eventos) {
   return tarjetas;
 }
 function actualizarTarjetas(eventos) {
-  contenedorTarjetas.innerHTML = dibujaTarjetas(eventos);
+  const tarjetas = dibujaTarjetas(eventos);
+
+  if (tarjetas === "") {
+    contenedorTarjetas.innerHTML = `<div  class="contenedor d-flex justify-content-center align-items-center" ><img style="width: 240px;" src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png" alt=""></div>`;
+  } else {
+    contenedorTarjetas.innerHTML = tarjetas;
+  }
 }
+
 actualizarTarjetas(events);
 
 buscador.addEventListener("keyup", () => {
