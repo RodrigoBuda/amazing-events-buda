@@ -72,7 +72,11 @@ function filtrarEventos() {
 // Función para actualizar las tarjetas en función de los filtros
 function actualizarTarjetasFiltradas() {
   const eventosFiltrados = filtrarEventos();
-  actualizarTarjetas(eventosFiltrados);
+  if (eventosFiltrados.length === 0) {
+    contenedorTarjetas.innerHTML = `<div  class="contenedor d-flex justify-content-center align-items-center" ><img style="width: 240px;" src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png" alt=""></div>`;
+  } else {
+    actualizarTarjetas(eventosFiltrados);
+  }
 }
 
 actualizarTarjetasFiltradas();
